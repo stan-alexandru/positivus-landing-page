@@ -26,9 +26,9 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.5.10",
-		"astro": "^4.5.15",
+		"astro": "^4.5.16",
 		"astro-seo": "^0.8.3",
-		"typescript": "^5.4.3"
+		"typescript": "^5.4.4"
 	},
 	"devDependencies": {
 		"@astrojs/sitemap": "^3.1.2",
