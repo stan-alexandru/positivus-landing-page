@@ -9,8 +9,8 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box; /* 1 */
-  background-repeat: no-repeat; /* 2 */
+	box-sizing: border-box; /* 1 */
+	background-repeat: no-repeat; /* 2 */
 }
 
 /**
@@ -20,8 +20,8 @@
 
 ::before,
 ::after {
-  text-decoration: inherit; /* 1 */
-  vertical-align: inherit; /* 2 */
+	text-decoration: inherit; /* 1 */
+	vertical-align: inherit; /* 2 */
 }
 
 /**
@@ -34,14 +34,14 @@
   */
 
 :where(:root) {
-  cursor: default; /* 1 */
-  line-height: 1.5; /* 2 */
-  overflow-wrap: break-word; /* 3 */
-  -moz-tab-size: 4; /* 4 */
-  tab-size: 4; /* 4 */
-  -webkit-tap-highlight-color: transparent; /* 5 */
-  -webkit-text-size-adjust: 100%; /* 6 */
-  text-size-adjust: 100%; /* 6 */
+	cursor: default; /* 1 */
+	line-height: 1.5; /* 2 */
+	overflow-wrap: break-word; /* 3 */
+	-moz-tab-size: 4; /* 4 */
+	tab-size: 4; /* 4 */
+	-webkit-tap-highlight-color: transparent; /* 5 */
+	-webkit-text-size-adjust: 100%; /* 6 */
+	text-size-adjust: 100%; /* 6 */
 }
 
 /* Sections
@@ -52,7 +52,7 @@
   */
 
 :where(body) {
-  margin: 0;
+	margin: 0;
 }
 
 /**
@@ -61,8 +61,8 @@
   */
 
 :where(h1) {
-  font-size: 2em;
-  margin: 0.67em 0;
+	font-size: 2em;
+	margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -73,7 +73,7 @@
   */
 
 :where(dl, ol, ul) :where(dl, ol, ul) {
-  margin: 0;
+	margin: 0;
 }
 
 /**
@@ -82,8 +82,8 @@
   */
 
 :where(hr) {
-  color: inherit; /* 1 */
-  height: 0; /* 2 */
+	color: inherit; /* 1 */
+	height: 0; /* 2 */
 }
 
 /**
@@ -91,8 +91,8 @@
   */
 
 :where(nav) :where(ol, ul) {
-  list-style-type: none;
-  padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
 /**
@@ -100,8 +100,8 @@
   */
 
 :where(nav li)::before {
-  content: '\200B';
-  float: left;
+	content: '\200B';
+	float: left;
 }
 
 /**
@@ -111,9 +111,9 @@
   */
 
 :where(pre) {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-  overflow: auto; /* 3 */
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+	overflow: auto; /* 3 */
 }
 
 /* Text-level semantics
@@ -124,8 +124,8 @@
   */
 
 :where(abbr[title]) {
-  text-decoration: underline;
-  text-decoration: underline dotted;
+	text-decoration: underline;
+	text-decoration: underline dotted;
 }
 
 /**
@@ -133,7 +133,7 @@
   */
 
 :where(b, strong) {
-  font-weight: bolder;
+	font-weight: bolder;
 }
 
 /**
@@ -142,8 +142,8 @@
   */
 
 :where(code, kbd, samp) {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
 }
 
 /**
@@ -151,7 +151,7 @@
   */
 
 :where(small) {
-  font-size: 80%;
+	font-size: 80%;
 }
 
 /* Embedded content
@@ -162,7 +162,7 @@
   */
 
 :where(audio, canvas, iframe, img, svg, video) {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 /**
@@ -170,7 +170,7 @@
   */
 
 :where(iframe) {
-  border-style: none;
+	border-style: none;
 }
 
 /**
@@ -178,7 +178,7 @@
   */
 
 :where(svg:not([fill])) {
-  fill: currentColor;
+	fill: currentColor;
 }
 
 /* Tabular data
@@ -191,9 +191,9 @@
   */
 
 :where(table) {
-  border-collapse: collapse; /* 1 */
-  border-color: currentColor; /* 2 */
-  text-indent: 0; /* 3 */
+	border-collapse: collapse; /* 1 */
+	border-color: currentColor; /* 2 */
+	text-indent: 0; /* 3 */
 }
 
 /* Forms
@@ -204,7 +204,7 @@
   */
 
 :where(button, input, select) {
-  margin: 0;
+	margin: 0;
 }
 
 /**
@@ -212,7 +212,7 @@
   */
 
 :where(button, [type='button' i], [type='reset' i], [type='submit' i]) {
-  -webkit-appearance: button;
+	-webkit-appearance: button;
 }
 
 /**
@@ -220,7 +220,7 @@
   */
 
 :where(fieldset) {
-  border: 1px solid #a0a0a0;
+	border: 1px solid #a0a0a0;
 }
 
 /**
@@ -228,7 +228,7 @@
   */
 
 :where(progress) {
-  vertical-align: baseline;
+	vertical-align: baseline;
 }
 
 /**
@@ -237,8 +237,8 @@
   */
 
 :where(textarea) {
-  margin: 0; /* 1 */
-  resize: vertical; /* 3 */
+	margin: 0; /* 1 */
+	resize: vertical; /* 3 */
 }
 
 /**
@@ -247,8 +247,8 @@
   */
 
 :where([type='search' i]) {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -257,7 +257,7 @@
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
-  height: auto;
+	height: auto;
 }
 
 /**
@@ -265,8 +265,8 @@
   */
 
 ::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
+	color: inherit;
+	opacity: 0.54;
 }
 
 /**
@@ -274,7 +274,7 @@
   */
 
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 /**
@@ -283,8 +283,8 @@
   */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -295,22 +295,22 @@
   */
 
 :where(dialog) {
-  background-color: white;
-  border: solid;
-  color: black;
-  height: -moz-fit-content;
-  height: fit-content;
-  left: 0;
-  margin: auto;
-  padding: 1em;
-  position: absolute;
-  right: 0;
-  width: -moz-fit-content;
-  width: fit-content;
+	background-color: white;
+	border: solid;
+	color: black;
+	height: -moz-fit-content;
+	height: fit-content;
+	left: 0;
+	margin: auto;
+	padding: 1em;
+	position: absolute;
+	right: 0;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 :where(dialog:not([open])) {
-  display: none;
+	display: none;
 }
 
 /*
@@ -318,7 +318,7 @@
   */
 
 :where(details > summary:first-of-type) {
-  display: list-item;
+	display: list-item;
 }
 
 /* Accessibility
@@ -329,7 +329,7 @@
   */
 
 :where([aria-busy='true' i]) {
-  cursor: progress;
+	cursor: progress;
 }
 
 /*
@@ -338,7 +338,7 @@
   */
 
 :where([aria-disabled='true' i], [disabled]) {
-  cursor: not-allowed;
+	cursor: not-allowed;
 }
 
 /*
@@ -347,12 +347,12 @@
   */
 
 :where([aria-hidden='false' i][hidden]) {
-  display: initial;
+	display: initial;
 }
 
 :where([aria-hidden='false' i][hidden]:not(:focus)) {
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
+	clip: rect(0, 0, 0, 0);
+	position: absolute;
 }
 /**
  * 1. Change the inconsistent appearance in all browsers (opinionated).
@@ -360,12 +360,12 @@
  */
 
 :where(button, input, select, textarea) {
-  background-color: transparent; /* 1 */
-  border: 1px solid WindowFrame; /* 1 */
-  color: inherit; /* 1 */
-  font: inherit; /* 2 */
-  letter-spacing: inherit; /* 2 */
-  padding: 0.25em 0.375em; /* 1 */
+	background-color: transparent; /* 1 */
+	border: 1px solid WindowFrame; /* 1 */
+	color: inherit; /* 1 */
+	font: inherit; /* 2 */
+	letter-spacing: inherit; /* 2 */
+	padding: 0.25em 0.375em; /* 1 */
 }
 
 /**
@@ -373,12 +373,12 @@
  */
 
 :where(select) {
-  -webkit-appearance: none;
-  appearance: none;
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E")
-    no-repeat right center / 1em;
-  border-radius: 0;
-  padding-right: 1em;
+	-webkit-appearance: none;
+	appearance: none;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E")
+		no-repeat right center / 1em;
+	border-radius: 0;
+	padding-right: 1em;
 }
 
 /**
@@ -386,7 +386,7 @@
  */
 
 :where(select[multiple]) {
-  background-image: none;
+	background-image: none;
 }
 
 /**
@@ -394,35 +394,35 @@
  */
 
 :where([type='color' i], [type='range' i]) {
-  border-width: 0;
-  padding: 0;
+	border-width: 0;
+	padding: 0;
 }
 /**
  * Restrict sizing to the page width in all browsers (opinionated).
  */
 
 :where(iframe, img, input, video, select, textarea) {
-  height: auto;
-  max-width: 100%;
+	height: auto;
+	max-width: 100%;
 }
 /**
  * Use the default user interface font in all browsers (opinionated).
  */
 
 html {
-  font-family:
-    system-ui,
-    /* macOS 10.11-10.12 */ -apple-system,
-    /* Windows 6+ */ 'Segoe UI',
-    /* Android 4+ */ 'Roboto',
-    /* Ubuntu 10.10+ */ 'Ubuntu',
-    /* Gnome 3+ */ 'Cantarell',
-    /* KDE Plasma 5+ */ 'Noto Sans',
-    /* fallback */ sans-serif,
-    /* macOS emoji */ 'Apple Color Emoji',
-    /* Windows emoji */ 'Segoe UI Emoji',
-    /* Windows emoji */ 'Segoe UI Symbol',
-    /* Linux emoji */ 'Noto Color Emoji';
+	font-family:
+		system-ui,
+		/* macOS 10.11-10.12 */ -apple-system,
+		/* Windows 6+ */ 'Segoe UI',
+		/* Android 4+ */ 'Roboto',
+		/* Ubuntu 10.10+ */ 'Ubuntu',
+		/* Gnome 3+ */ 'Cantarell',
+		/* KDE Plasma 5+ */ 'Noto Sans',
+		/* fallback */ sans-serif,
+		/* macOS emoji */ 'Apple Color Emoji',
+		/* Windows emoji */ 'Segoe UI Emoji',
+		/* Windows emoji */ 'Segoe UI Symbol',
+		/* Linux emoji */ 'Noto Color Emoji';
 }
 
 /**
@@ -433,20 +433,20 @@ code,
 kbd,
 samp,
 pre {
-  font-family:
-    ui-monospace,
-    /* macOS 10.10+ */ 'Menlo',
-    /* Windows 6+ */ 'Consolas',
-    /* Android 4+ */ 'Roboto Mono',
-    /* Ubuntu 10.10+ */ 'Ubuntu Monospace',
-    /* KDE Plasma 5+ */ 'Noto Mono',
-    /* KDE Plasma 4+ */ 'Oxygen Mono',
-    /* Linux/OpenOffice fallback */ 'Liberation Mono',
-    /* fallback */ monospace,
-    /* macOS emoji */ 'Apple Color Emoji',
-    /* Windows emoji */ 'Segoe UI Emoji',
-    /* Windows emoji */ 'Segoe UI Symbol',
-    /* Linux emoji */ 'Noto Color Emoji';
+	font-family:
+		ui-monospace,
+		/* macOS 10.10+ */ 'Menlo',
+		/* Windows 6+ */ 'Consolas',
+		/* Android 4+ */ 'Roboto Mono',
+		/* Ubuntu 10.10+ */ 'Ubuntu Monospace',
+		/* KDE Plasma 5+ */ 'Noto Mono',
+		/* KDE Plasma 4+ */ 'Oxygen Mono',
+		/* Linux/OpenOffice fallback */ 'Liberation Mono',
+		/* fallback */ monospace,
+		/* macOS emoji */ 'Apple Color Emoji',
+		/* Windows emoji */ 'Segoe UI Emoji',
+		/* Windows emoji */ 'Segoe UI Symbol',
+		/* Linux emoji */ 'Noto Color Emoji';
 }
 /*
  * 1. Remove animations when motion is reduced (opinionated).
@@ -456,81 +456,81 @@ pre {
  */
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  ::before,
-  ::after {
-    animation-delay: -1ms !important; /* 1 */
-    animation-duration: 1ms !important; /* 1 */
-    animation-iteration-count: 1 !important; /* 1 */
-    background-attachment: initial !important; /* 2 */
-    scroll-behavior: auto !important; /* 3 */
-    transition-delay: 0s !important; /* 4 */
-    transition-duration: 0s !important; /* 4 */
-  }
+	*,
+	::before,
+	::after {
+		animation-delay: -1ms !important; /* 1 */
+		animation-duration: 1ms !important; /* 1 */
+		animation-iteration-count: 1 !important; /* 1 */
+		background-attachment: initial !important; /* 2 */
+		scroll-behavior: auto !important; /* 3 */
+		transition-delay: 0s !important; /* 4 */
+		transition-duration: 0s !important; /* 4 */
+	}
 }
 /**
  * Add the correct system-ui font-family in Firefox.
  */
 
 @font-face {
-  font-family: system-ui;
-  src: local('.AppleSystemUIFont'), local('Segoe UI'), local('Ubuntu'),
-    local('Roboto-Regular'), local('HelveticaNeue');
+	font-family: system-ui;
+	src: local('.AppleSystemUIFont'), local('Segoe UI'), local('Ubuntu'),
+		local('Roboto-Regular'), local('HelveticaNeue');
 }
 
 @font-face {
-  font-family: system-ui;
-  font-style: italic;
-  src: local('.AppleSystemUIFont'), local('Segoe UI Italic'),
-    local('Ubuntu-Italic'), local('Roboto-Italic'),
-    local('HelveticaNeue-Italic');
+	font-family: system-ui;
+	font-style: italic;
+	src: local('.AppleSystemUIFont'), local('Segoe UI Italic'),
+		local('Ubuntu-Italic'), local('Roboto-Italic'),
+		local('HelveticaNeue-Italic');
 }
 
 @font-face {
-  font-family: system-ui;
-  font-weight: bold;
-  src: local('.AppleSystemUIFont'), local('Segoe UI Bold'), local('Ubuntu-Bold'),
-    local('Roboto-Bold'), local('HelveticaNeue-Bold');
+	font-family: system-ui;
+	font-weight: bold;
+	src: local('.AppleSystemUIFont'), local('Segoe UI Bold'), local('Ubuntu-Bold'),
+		local('Roboto-Bold'), local('HelveticaNeue-Bold');
 }
 
 @font-face {
-  font-family: system-ui;
-  font-style: italic;
-  font-weight: bold;
-  src: local('.AppleSystemUIFont'), local('Segoe UI Bold Italic'),
-    local('Ubuntu-BoldItalic'), local('Roboto-BoldItalic'),
-    local('HelveticaNeue-BoldItalic');
+	font-family: system-ui;
+	font-style: italic;
+	font-weight: bold;
+	src: local('.AppleSystemUIFont'), local('Segoe UI Bold Italic'),
+		local('Ubuntu-BoldItalic'), local('Roboto-BoldItalic'),
+		local('HelveticaNeue-BoldItalic');
 }
 /**
  * Add the correct system-ui font-family in Chrome, Edge, and Firefox.
  */
 
 @font-face {
-  font-family: ui-monospace;
-  src: local('.AppleSystemUIFontMonospaced-Regular'), local('Segoe UI Mono'),
-    local('UbuntuMono'), local('Roboto-Mono'), local('Menlo');
+	font-family: ui-monospace;
+	src: local('.AppleSystemUIFontMonospaced-Regular'), local('Segoe UI Mono'),
+		local('UbuntuMono'), local('Roboto-Mono'), local('Menlo');
 }
 
 @font-face {
-  font-family: ui-monospace;
-  font-style: italic;
-  src: local('.AppleSystemUIFontMonospaced-RegularItalic'),
-    local('Segoe UI Mono Italic'), local('UbuntuMono-Italic'),
-    local('Roboto-Mono-Italic'), local('Menlo-Italic');
+	font-family: ui-monospace;
+	font-style: italic;
+	src: local('.AppleSystemUIFontMonospaced-RegularItalic'),
+		local('Segoe UI Mono Italic'), local('UbuntuMono-Italic'),
+		local('Roboto-Mono-Italic'), local('Menlo-Italic');
 }
 
 @font-face {
-  font-family: ui-monospace;
-  font-weight: bold;
-  src: local('.AppleSystemUIFontMonospaced-Bold'), local('Segoe UI Mono Bold'),
-    local('UbuntuMono-Bold'), local('Roboto-Mono-Bold'), local('Menlo-Bold');
+	font-family: ui-monospace;
+	font-weight: bold;
+	src: local('.AppleSystemUIFontMonospaced-Bold'), local('Segoe UI Mono Bold'),
+		local('UbuntuMono-Bold'), local('Roboto-Mono-Bold'), local('Menlo-Bold');
 }
 
 @font-face {
-  font-family: ui-monospace;
-  font-style: italic;
-  font-weight: bold;
-  src: local('.AppleSystemUIFontMonospaced-BoldItalic'),
-    local('Segoe UI Mono Bold Italic'), local('UbuntuMono-BoldItalic'),
-    local('Roboto-Mono-BoldItalic'), local('Menlo-BoldItalic');
+	font-family: ui-monospace;
+	font-style: italic;
+	font-weight: bold;
+	src: local('.AppleSystemUIFontMonospaced-BoldItalic'),
+		local('Segoe UI Mono Bold Italic'), local('UbuntuMono-BoldItalic'),
+		local('Roboto-Mono-BoldItalic'), local('Menlo-BoldItalic');
 }

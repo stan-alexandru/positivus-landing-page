@@ -1,4 +1,7 @@
-MIT License
+CC BY 4.0 Deed for Art/Assets
+Copyright (c) 2024 Olga Skuja(averchenko.olga@gmail.com)
+
+MIT License for software
 
 Copyright (c) 2024 Alexandru Stefan Stan
 

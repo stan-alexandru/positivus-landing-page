@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alexstan.com/sitemap-index.xml
+Sitemap: https://positivus.alexstan.com/sitemap-index.xml

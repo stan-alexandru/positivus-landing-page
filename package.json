@@ -1,13 +1,19 @@
 {
-	"name": "astro-template",
-	"description": "DESCRIPTION",
+	"name": "positivus-landing-page",
+	"description": "My interpretation of the Positivus landing page from figma.",
 	"type": "module",
 	"version": "0.0.1",
 	"author": {
 		"name": "Alexandru Stefan Stan",
 		"email": "stan.alexandru26@gmail.com"
 	},
-	"license": "MIT",
+	"contributors": [
+		{
+			"name": "Olga Skuja",
+			"email": "olga.skuja@gmail.com",
+			"url": "https://www.olgaskuja.design"
+		}
+	],
 	"private": true,
 	"scripts": {
 		"dev": "astro dev",
@@ -20,15 +26,16 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.5.10",
-		"astro": "^4.5.9",
+		"astro": "^4.5.15",
+		"astro-seo": "^0.8.3",
 		"typescript": "^5.4.3"
 	},
 	"devDependencies": {
-		"@astrojs/sitemap": "^3.1.1",
+		"@astrojs/sitemap": "^3.1.2",
 		"@csstools/postcss-global-data": "^2.1.1",
 		"@total-typescript/ts-reset": "^0.5.1",
-		"@typescript-eslint/eslint-plugin": "^7.4.0",
-		"@typescript-eslint/parser": "^7.4.0",
+		"@typescript-eslint/eslint-plugin": "^7.5.0",
+		"@typescript-eslint/parser": "^7.5.0",
 		"astro-eslint-parser": "^0.16.3",
 		"eslint": "^8.57.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -36,7 +43,7 @@
 		"eslint-plugin-jsx-a11y": "^6.8.0",
 		"postcss": "^8.4.38",
 		"postcss-mixins": "^10.0.0",
-		"postcss-preset-env": "^9.5.2",
+		"postcss-preset-env": "^9.5.4",
 		"prettier": "^3.2.5",
 		"prettier-plugin-astro": "^0.13.0"
 	},

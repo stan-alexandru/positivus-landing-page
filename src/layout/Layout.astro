@@ -1,23 +1,39 @@
 ---
 import '@/assets/style/main.css';
-
+import { SEO } from 'astro-seo';
 interface Props {
-  title: string;
+	title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <html lang='en'>
-  <head>
-    <meta charset='UTF-8' />
-    <meta name='description' content='DESCRIPTION' />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body>
-    <main class='container'><slot /></main>
-  </body>
+	<head>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<link rel='sitemap' href='/sitemap-index.xml' />
+		<meta name='generator' content={Astro.generator} />
+		<SEO
+			titleTemplate='%s | Positivus'
+			titleDefault='Positivus Landing page'
+			title={title}
+			description='My interpretation of the Positivus landing page from figma.'
+			openGraph={{
+				basic: {
+					title: 'My interpretation of the Positivus landing page from figma.',
+					type: 'website',
+					image: '/og-image.webp',
+					url: 'https://positivus.alexstan.com',
+				},
+			}}
+			twitter={{
+				card: 'summary',
+			}}
+		/>
+	</head>
+	<body>
+		<main class='container'><slot /></main>
+	</body>
 </html>
