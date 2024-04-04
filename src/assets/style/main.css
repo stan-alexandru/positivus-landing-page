@@ -1,0 +1,58 @@
+@import 'sanitize.css';
+@import 'variables.css';
+
+html {
+	scroll-behavior: smooth;
+	font-size: 16px;
+	line-height: 1.5rem;
+}
+body {
+	min-height: 100vh;
+	width: 100%;
+	overflow: hidden auto;
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+// Theme
+
+h1,
+.h1 {
+	font-size: 2rem;
+	line-height: 2.25rem;
+	font-weight: 600;
+	@media (--device-tablet) {
+		font-size: 3rem;
+	}
+}
+h2,
+.h2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 500;
+
+	@media (--device-tablet) {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+}
+h3,
+.h3 {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 400;
+	@media (--device-tablet) {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+}
+p,
+body,
+.p {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	@media (--device-tablet) {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
