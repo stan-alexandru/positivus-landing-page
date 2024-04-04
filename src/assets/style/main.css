@@ -1,54 +1,62 @@
 @import '_reset.css';
 @import 'variables.css';
 
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk.ttf') format('truetype');
+}
 html {
+	font-family: 'Space Grotesk', sans-serif;
 	font-size: 16px;
 }
 body {
 	overflow: hidden auto;
-	background-color: var(--background-color);
-	color: var(--text-color);
+	background-color: var(--color-white);
+	color: var(--color-black);
 }
 
 /* Theme */
 
 h1,
 .h1 {
-	font-size: 2rem;
-	line-height: 2.25rem;
-	font-weight: 600;
+	font-size: 43px;
+	font-weight: 500;
 	@media (--device-tablet) {
-		font-size: 3rem;
+		font-size: 60px;
 	}
 }
 h2,
 .h2 {
-	font-size: 1.5rem;
-	line-height: 2rem;
+	font-size: 2.25rem;
 	font-weight: 500;
 
 	@media (--device-tablet) {
-		font-size: 2.25rem;
-		line-height: 2.5rem;
+		font-size: 2.5rem;
 	}
 }
 h3,
 .h3 {
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	font-weight: 400;
+	font-size: 1.625rem;
+	font-weight: 500;
 	@media (--device-tablet) {
 		font-size: 1.875rem;
-		line-height: 2.25rem;
 	}
 }
+h4,
+.h4 {
+	font-size: 1.125rem;
+	@media (--device-tablet) {
+		font-size: 1.25rem;
+	}
+}
+
 p,
 body,
 .p {
-	font-size: 0.875rem;
-	line-height: 1.25rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
 	@media (--device-tablet) {
-		font-size: 1rem;
-		line-height: 1.5rem;
+		font-size: 1.125rem;
 	}
 }

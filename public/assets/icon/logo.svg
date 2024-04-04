@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-  <g >
+  <g clip-path="url(#a)">
     <path fill="#fff" d="M11.806 3.63 23.351.229l-3.368 11.577 3.368 11.545-11.545-3.368L.23 23.35l3.4-11.545L.23.23l11.577 3.4Z"/>
   </g>
   <defs>
