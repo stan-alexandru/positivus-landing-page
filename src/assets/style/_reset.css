@@ -15,14 +15,19 @@
 */
 * {
 	margin: 0;
+	padding: 0;
 }
 /*
   Typographic tweaks!
   3. Add accessible line-height
   4. Improve text rendering
 */
+html {
+	height: 100%;
+}
 body {
 	scroll-behavior: smooth;
+	padding: 0.01px;
 	min-height: 100dvh;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
@@ -40,10 +45,14 @@ svg {
 }
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
-ol[role='list'] {
+ol[role='list'],
+li {
 	list-style: none;
 }
-
+a {
+	color: inherit;
+	text-decoration: none;
+}
 /*
   6. Remove built-in form typography styles
 */

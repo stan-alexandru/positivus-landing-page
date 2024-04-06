@@ -1,0 +1,219 @@
+---
+import { HEADER, SOCIAL } from '@/data/index';
+---
+
+<footer class='container'>
+	<div class='footer-wrapper'>
+		<div class='footer-header'>
+			<img src='/public/assets/icon/logo-light.svg' />
+			<nav>
+				<ul class='footer-header-nav'>
+					{
+						HEADER.map((item) => (
+							<li>
+								<a href={item.href} aria-label={item.title}>
+									{item.title}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</nav>
+			<address class='header-social-wrapper'>
+				{
+					SOCIAL.map((social) => (
+						<a href={social.path} aria-label={`${social.title} link`}>
+							<img src={social.path} height='30px' width='30px' />
+						</a>
+					))
+				}
+			</address>
+		</div>
+		<div class='footer-contact'>
+			<address class='footer-contact-wrapper'>
+				<h1 class='h4'>Contact us:</h1>
+				<p>Email: info@positivus.com</p>
+				<p id='phone'>Phone: 555-567-8901</p>
+				<p>Address: 1234 Main St</p>
+				<p>Moonstone City, Stardust State 12345</p>
+			</address>
+			<form class='footer-form'>
+				<input placeholder='Email' type='email' />
+				<button>Subscribe to news</button>
+			</form>
+		</div>
+	</div>
+
+	<address class='footer-social-wrapper'>
+		{
+			SOCIAL.map((social) => (
+				<a href={social.path} aria-label={`${social.title} link`}>
+					<img src={social.path} height='30px' width='30px' />
+				</a>
+			))
+		}
+	</address>
+	<div class='footer-policy-wrapper'>
+		<p>© 2023 Positivus. All Rights Reserved.</p>
+		<a href='#' aria-label='privacy policy'>Privacy Policy</a>
+	</div>
+</footer>
+
+<style scoped>
+	footer {
+		padding-block: 50px 30px;
+		padding-inline: 20px;
+		background-color: var(--color-dark);
+		color: var(--color-white);
+		border-top-right-radius: var(--border-radius-lg);
+		border-top-left-radius: var(--border-radius-lg);
+		@media (--size-md) {
+			padding-block: 55px 50px;
+			padding-inline: 60px;
+		}
+	}
+	.footer-header {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 37px;
+		@media (--size-md) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	.footer-header-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+
+		@media (--size-md) {
+			flex-direction: row;
+			gap: 40px;
+
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+	.header-social-wrapper {
+		display: none;
+		@media (--size-lg) {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+		}
+	}
+	.footer-contact {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 37px;
+		@media (--size-md) {
+			flex-direction: row;
+
+			justify-content: space-between;
+		}
+		@media (--size-lg) {
+			gap: 154px;
+		}
+	}
+	.footer-contact-wrapper {
+		font-style: normal;
+		text-align: center;
+		h1 {
+			background-color: var(--color-green);
+			border-radius: var(--border-radius-sm);
+			color: var(--color-black);
+			width: fit-content;
+			padding-inline: 7px;
+			margin: 37px 90px;
+			@media (--size-md) {
+				margin: 37px 0;
+			}
+		}
+		#phone {
+			margin-block: 15px;
+		}
+		@media (--size-md) {
+			text-align: start;
+		}
+	}
+	.footer-form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 22px;
+		background-color: #292a32;
+		border-radius: var(--border-radius-md);
+		padding: 30px;
+		input {
+			width: 100%;
+			border: 1px solid var(--color-grey);
+			border-radius: var(--border-radius-md);
+			padding-left: 25px;
+			padding-block: 21px;
+			background-color: #292a32;
+			color: var(--color-white);
+		}
+		input::placeholder {
+			color: var(--color-white);
+		}
+		button {
+			width: 100%;
+			border-radius: var(--border-radius-md);
+			background-color: var(--color-green);
+			color: var(--color-black);
+			padding-block: 21px;
+		}
+		@media (--size-md) {
+			flex-direction: row;
+		}
+	}
+	.footer-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 37px;
+		margin-block: 37px;
+		@media (--size-md) {
+		}
+	}
+	.footer-social-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-block: 35px;
+		gap: 20px;
+		@media (--size-md) {
+			display: none;
+		}
+	}
+	.footer-policy-wrapper {
+		border-top: 1px solid var(--color-grey);
+		padding-block: 37px;
+		display: flex;
+		flex-direction: column;
+		place-items: center;
+		gap: 15px;
+		@media (--size-md) {
+			flex-direction: row;
+			gap: 40px;
+		}
+		a {
+			@media (--size-md) {
+				text-decoration: underline;
+			}
+		}
+	}
+</style>

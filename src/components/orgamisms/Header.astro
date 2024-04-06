@@ -1,0 +1,89 @@
+---
+import { HEADER } from '@/data';
+---
+
+<header class='container'>
+	<img src='/public/assets/icon/logo-dark.svg' />
+	<nav>
+		<ul>
+			{
+				HEADER.map((item) => (
+					<li>
+						<a href={item.href} aria-label={item.title}>
+							{item.title}
+						</a>
+					</li>
+				))
+			}
+			<a id='request-button' href='#' aria-label='request button'
+				>Request a quote</a
+			>
+		</ul>
+	</nav>
+	<button id='button'
+		><img
+			src='/public/assets/icon/burger.svg'
+			height='16px'
+			width='24px'
+		/></button
+	>
+</header>
+<style scoped>
+	#request-button {
+		border-radius: var(--border-radius-sm);
+		border: 1px solid var(--color-black);
+		&:hover {
+			background-color: var(--color-green);
+		}
+		@media (--size-md) {
+			padding: 12px;
+		}
+		@media (--size-lg) {
+			padding: 20px 35px;
+		}
+	}
+	ul {
+		display: none;
+		@media (--size-md) {
+			display: flex;
+			flex-direction: row;
+			place-items: center;
+			gap: 15px;
+		}
+		@media (--size-lg) {
+			gap: 40px;
+		}
+	}
+	li {
+		text-align: center;
+		display: flex;
+		place-items: center;
+	}
+	header {
+		margin-block: 30px 40px;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+		@media (--size-md) {
+			margin-block: 3.125rem 4.375rem;
+		}
+	}
+	img {
+		max-width: 100%;
+		height: 24px;
+		@media (--size-sm) {
+			height: 36px;
+		}
+	}
+	#button {
+		background-color: white;
+		border: 0;
+		&:hover {
+			cursor: pointer;
+		}
+		@media (--size-md) {
+			display: none;
+		}
+	}
+</style>
