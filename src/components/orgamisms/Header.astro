@@ -3,7 +3,9 @@ import { HEADER } from '@/data';
 ---
 
 <header class='container'>
-	<img src='/assets/icon/logo-dark.svg' />
+	<a href='/' aria-label='home link'>
+		<img src='/assets/icon/logo-dark.svg' />
+	</a>
 	<nav>
 		<ul>
 			{
@@ -21,11 +23,7 @@ import { HEADER } from '@/data';
 		</ul>
 	</nav>
 	<button id='button'
-		><img
-			src='/assets/icon/burger.svg'
-			height='16px'
-			width='24px'
-		/></button
+		><img src='/assets/icon/burger.svg' height='16px' width='24px' /></button
 	>
 </header>
 <style scoped>
@@ -60,6 +58,8 @@ import { HEADER } from '@/data';
 		place-items: center;
 	}
 	header {
+		width: 100%;
+		padding-inline: 20px;
 		margin-block: 30px 40px;
 		display: flex;
 		align-items: center;
