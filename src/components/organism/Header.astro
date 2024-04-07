@@ -17,7 +17,7 @@ import { HEADER } from '@/data';
 					</li>
 				))
 			}
-			<a id='request-button' href='#' aria-label='request button'
+			<a id='request-button' href='#contact' aria-label='request button'
 				>Request a quote</a
 			>
 		</ul>
@@ -56,6 +56,10 @@ import { HEADER } from '@/data';
 		text-align: center;
 		display: flex;
 		place-items: center;
+		&:hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
 	}
 	header {
 		width: 100%;

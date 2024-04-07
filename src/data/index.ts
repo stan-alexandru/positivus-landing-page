@@ -1,23 +1,23 @@
 export const HEADER = [
 	{
 		title: 'About us',
-		href: '#',
+		href: '#about-us',
 	},
 	{
 		title: 'Services',
-		href: '#',
+		href: '#services',
 	},
 	{
 		title: 'Use Cases',
-		href: '#',
+		href: '#use-cases',
 	},
 	{
 		title: 'Pricing',
-		href: '#',
+		href: '#pricing',
 	},
 	{
 		title: 'Blog',
-		href: '#',
+		href: '#blog',
 	},
 ];
 export const SOCIAL = [
