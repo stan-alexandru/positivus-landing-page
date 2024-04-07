@@ -1,0 +1,57 @@
+---
+
+---
+
+<article>
+	<div class='hero-text-wrapper'>
+		<h1>Navigating the digital landscape for success</h1>
+		<img class='hero-text-img' src='/assets/hero1.svg' />
+		<p>
+			Our digital marketing agency helps businesses grow and succeed online
+			through a range of services including SEO, PPC, social media marketing,
+			and content creation.
+		</p>
+		<a>Book a consultation</a>
+	</div>
+	<img src='/assets/hero1.svg' />
+</article>
+<style scoped>
+	article {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		@media (--size-md) {
+			flex-direction: row;
+		}
+	}
+	.hero-text-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+	}
+	.hero-text-img {
+		max-height: 310px;
+		max-width: 360px;
+		@media (--size-md) {
+			display: none;
+		}
+	}
+	img {
+		@media (--size-md) {
+			max-height: 515px;
+			max-width: 600px;
+		}
+	}
+	a {
+		width: 100%;
+		color: var(--color-white);
+		background-color: var(--color-dark);
+		border-radius: var(--border-radius-md);
+		padding: 20px 35px;
+		text-align: center;
+		@media (--size-md) {
+			width: max-content;
+		}
+	}
+</style>

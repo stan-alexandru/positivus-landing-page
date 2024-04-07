@@ -33,44 +33,51 @@ main {
 }
 h1,
 .h1 {
-	font-size: 2.6875rem;
+	font-size: 43px;
 	font-weight: 500;
+	line-height: normal;
 	@media (--size-md) {
-		font-size: 3.75rem;
+		font-size: 60px;
 	}
 }
 h2,
 .h2 {
-	font-size: 2.25rem;
+	font-size: 36px;
 	font-weight: 500;
+	line-height: normal;
 
 	@media (--size-md) {
-		font-size: 2.5rem;
+		font-size: 40px;
 	}
 }
 h3,
 .h3 {
-	font-size: 1.625rem;
+	font-size: 26px;
 	font-weight: 500;
+	line-height: normal;
+
 	@media (--size-md) {
-		font-size: 1.875rem;
+		font-size: 30px;
 	}
 }
 h4,
 .h4 {
-	font-size: 1.125rem;
+	font-size: 18px;
+	line-height: normal;
+
 	@media (--size-md) {
-		font-size: 1.25rem;
+		font-size: 20px;
 	}
 }
 
 p,
 body,
 .p {
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-size: 16px;
+	line-height: 24px;
 	font-weight: 400;
+
 	@media (--size-md) {
-		font-size: 1.125rem;
+		font-size: 18px;
 	}
 }
