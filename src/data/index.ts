@@ -24,16 +24,16 @@ export const SOCIAL = [
 	{
 		title: 'LinkedIn',
 		href: '#',
-		path: '/public/assets/icon/linkedin.svg',
+		path: '/assets/icon/linkedin.svg',
 	},
 	{
 		title: 'Facebook',
 		href: '#',
-		path: '/public/assets/icon/facebook.svg',
+		path: '/assets/icon/facebook.svg',
 	},
 	{
 		title: 'Twitter',
 		href: '#',
-		path: '/public/assets/icon/twitter.svg',
+		path: '/assets/icon/twitter.svg',
 	},
 ];
