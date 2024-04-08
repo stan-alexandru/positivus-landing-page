@@ -1,0 +1,43 @@
+---
+import Card from '../atom/Card.astro';
+import Header from '../atom/Header.astro';
+import Link from '../atom/Link.astro';
+
+interface Props {
+	title: string;
+	theme: any;
+	icon: string;
+}
+const { theme, title, icon } = Astro.props;
+
+const linkTheme = (theme: string): any => {
+	if (theme == 'green') return 'black';
+	if (theme == 'grey') return 'black';
+	if (theme == 'black') return 'white';
+};
+---
+
+<Card theme={theme}>
+	<div>
+		<Header title={title} theme={theme} />
+		<img src={icon} />
+		<Link position='right' theme={linkTheme(theme)} />
+	</div>
+</Card>
+<style scoped>
+	div {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	img {
+		align-self: center;
+		height: 129px;
+		width: 165px;
+		@media (--size-md) {
+			height: 149px;
+			width: 210px;
+			align-self: flex-end;
+		}
+	}
+</style>

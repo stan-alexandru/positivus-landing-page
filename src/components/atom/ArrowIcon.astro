@@ -1,0 +1,27 @@
+---
+interface Props {
+	theme?: 'white' | 'black';
+}
+const { theme = 'white' } = Astro.props;
+---
+
+<img
+	src={theme === 'white'
+		? '/assets/icon/arrow-dark.svg'
+		: '/assets/icon/arrow-green.svg'}
+	width='40'
+	height='40'
+	class:list={[theme === 'white' ? 'black' : 'white']}
+/>
+
+<style>
+	img {
+		border-radius: 100%;
+	}
+	.white {
+		background-color: var(--color-black);
+	}
+	.black {
+		background-color: var(--color-white);
+	}
+</style>

@@ -2,8 +2,20 @@
 import Template from '@/components/template/Template.astro';
 import Hero from '@/components/organism/Hero.astro';
 import Partners from '@/components/organism/Partners.astro';
+import Section from '@/components/atom/Section.astro';
+import ServiceCard from '@/components/organism/ServiceCard.astro';
+import { SERVICES } from '@/data';
 ---
 
 <Template title='Home'>
-	<section><Hero /><Partners /></section>
+	<section>
+		<Hero />
+		<Partners />
+		<Section
+			title='Services'
+			text='At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:'
+		>
+			{SERVICES.map((service) => <ServiceCard {...service} />)}
+		</Section>
+	</section>
 </Template>

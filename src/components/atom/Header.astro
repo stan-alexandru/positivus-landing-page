@@ -1,0 +1,35 @@
+---
+interface Props {
+	title: string;
+	theme?: 'green' | 'white' | 'black';
+	className?: string;
+}
+const { title, theme = 'green', className } = Astro.props;
+
+const headerTheme = (theme: string): any => {
+	if (theme == 'green') return 'white';
+	if (theme == 'grey') return 'green';
+	if (theme == 'black') return 'white';
+};
+---
+
+<h1 class:list={['h2', headerTheme(theme), className]}>{title}</h1>
+<style scoped>
+	h1 {
+		border-radius: var(--border-radius-sm);
+		width: fit-content;
+		padding-inline: 7px;
+	}
+	.green {
+		background-color: var(--color-green);
+		color: var(--color-black);
+	}
+	.white {
+		background-color: var(--color-white);
+		color: var(--color-black);
+	}
+	.black {
+		background-color: var(--color-black);
+		color: var(--color-white);
+	}
+</style>

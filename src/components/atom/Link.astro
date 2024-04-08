@@ -1,0 +1,42 @@
+---
+import ArrowIcon from './ArrowIcon.astro';
+
+interface Props {
+	position: 'left' | 'right';
+	theme: 'white' | 'black';
+	text?: string;
+	href?: string;
+}
+const { position = 'left', theme, text = 'Learn more', href } = Astro.props;
+---
+
+<a href={href} class:list={[position, theme]}
+	><ArrowIcon theme={theme} />{text}</a
+>
+<style scoped>
+	a {
+		display: flex;
+		align-items: center;
+		width: fit-content;
+		font-size: 0;
+		gap: 15px;
+		&:hover {
+			cursor: pointer;
+		}
+		@media (--size-md) {
+			font-size: unset;
+		}
+	}
+	.left {
+		flex-direction: row-reverse;
+	}
+	.right {
+		flex-direction: row;
+	}
+	.dark {
+		color: var(--color-black);
+	}
+	.white {
+		color: var(--color-white);
+	}
+</style>

@@ -1,0 +1,71 @@
+---
+import Header from './Header.astro';
+
+interface Props {
+	title: string;
+	id?: string;
+	text?: string;
+}
+const { title, id = title.toLocaleLowerCase(), text } = Astro.props;
+---
+
+<section id={id}>
+	<div class='section-title-wrapper'>
+		<Header title={title} />
+		<p>{text}</p>
+	</div>
+	<div class='section-slot-wrapper'>
+		<slot />
+	</div>
+</section>
+<style scoped>
+	section {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 40px;
+		@media (--size-lg) {
+			gap: 80px;
+		}
+	}
+	.section-title-wrapper {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		gap: 30px;
+		@media (--size-md) {
+			text-align: start;
+			flex-direction: row;
+			gap: 40px;
+		}
+	}
+	.section-slot-wrapper {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		gap: 30px;
+		@media (--size-md) {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(1, 1fr);
+		}
+		@media (--size-lg) {
+			gap: 30px;
+		}
+	}
+	p {
+		@media (--size-lg) {
+			width: 50%;
+		}
+	}
+	h1 {
+		background-color: var(--color-green);
+		border-radius: var(--border-radius-sm);
+		color: var(--color-black);
+		width: fit-content;
+		padding-inline: 7px;
+		@media (--size-md) {
+		}
+	}
+</style>

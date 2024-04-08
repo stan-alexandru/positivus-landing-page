@@ -46,3 +46,35 @@ export const PARTNERS = [
 	{ title: 'Netflix', path: '/assets/logo/netflix.svg' },
 	{ title: 'Zoom', path: '/assets/logo/zoom.svg' },
 ];
+export const SERVICES = [
+	{
+		title: 'Search engine optimization',
+		icon: '/assets/service/search-engine-optimization.png',
+		theme: 'grey',
+	},
+	{
+		title: 'Pay-per-click advertising',
+		icon: '/assets/service/pay-per-click.png',
+		theme: 'green',
+	},
+	{
+		title: 'Social Media Marketing',
+		icon: '/assets/service/social-media-marketing.png',
+		theme: 'black',
+	},
+	{
+		title: 'Email Marketing',
+		icon: '/assets/service/email-marketing.png',
+		theme: 'grey',
+	},
+	{
+		title: 'Content Creation',
+		icon: '/assets/service/content-creation.png',
+		theme: 'green',
+	},
+	{
+		title: 'Analytics and Tracking',
+		icon: '/assets/service/analitics-and-tracking.png',
+		theme: 'black',
+	},
+];
