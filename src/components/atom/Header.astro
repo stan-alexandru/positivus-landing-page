@@ -4,7 +4,7 @@ interface Props {
 	theme?: 'green' | 'white' | 'black';
 	className?: string;
 }
-const { title, theme = 'green', className } = Astro.props;
+const { title, theme = 'grey', className } = Astro.props;
 
 const headerTheme = (theme: string): any => {
 	if (theme == 'green') return 'white';

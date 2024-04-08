@@ -42,18 +42,9 @@ const { title, id = title.toLocaleLowerCase(), text } = Astro.props;
 		}
 	}
 	.section-slot-wrapper {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(1, 1fr);
-		gap: 30px;
-		@media (--size-md) {
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(1, 1fr);
-		}
-		@media (--size-lg) {
-			gap: 30px;
-		}
+		display: flex;
 	}
+
 	p {
 		@media (--size-lg) {
 			width: 50%;
