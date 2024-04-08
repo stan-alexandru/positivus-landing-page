@@ -37,3 +37,12 @@ export const SOCIAL = [
 		path: '/assets/icon/twitter.svg',
 	},
 ];
+
+export const PARTNERS = [
+	{ title: 'Amazon', path: '/assets/logo/amazon.svg' },
+	{ title: 'Dribble', path: '/assets/logo/dribble.svg' },
+	{ title: 'HubSpot', path: '/assets/logo/hubspot.svg' },
+	{ title: 'Notion', path: '/assets/logo/notion.svg' },
+	{ title: 'Netflix', path: '/assets/logo/netflix.svg' },
+	{ title: 'Zoom', path: '/assets/logo/zoom.svg' },
+];
