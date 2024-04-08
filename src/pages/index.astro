@@ -5,6 +5,7 @@ import Partners from '@/components/organism/Partners.astro';
 import Section from '@/components/atom/Section.astro';
 import ServiceCard from '@/components/organism/ServiceCard.astro';
 import { SERVICES } from '@/data';
+import CallToAction from '@/components/organism/CallToAction.astro';
 ---
 
 <Template title='Home'>
@@ -17,5 +18,6 @@ import { SERVICES } from '@/data';
 		>
 			{SERVICES.map((service) => <ServiceCard {...service} />)}
 		</Section>
+		<CallToAction />
 	</section>
 </Template>

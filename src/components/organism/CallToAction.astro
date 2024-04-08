@@ -1,0 +1,65 @@
+<article>
+	<div>
+		<div class='cta-text-wrapper'>
+			<h1 class='h3'>Let’s make things happen</h1>
+			<p>
+				Contact us today to learn more about how our digital marketing services
+				can help your business grow and succeed online.
+			</p>
+			<a href='#contact'>Get your free proposal</a>
+		</div>
+		<img src='/assets/hero2.svg' height='394' width='494' />
+	</div>
+</article>
+
+<style scoped>
+	article {
+		padding-block: 24px;
+		margin-block: 70px 60px;
+		@media (--size-md) {
+			margin-block: 100px 140px;
+		}
+	}
+	div {
+		border-radius: var(--border-radius-lg);
+		background-color: var(--color-grey);
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		justify-content: space-between;
+	}
+	.cta-text-wrapper {
+		display: flex;
+		flex-direction: column;
+		padding: 50px;
+		gap: 20px;
+		@media (--size-md) {
+			padding: 60px;
+			gap: 26px;
+		}
+	}
+	img {
+		display: none;
+		@media (--size-md) {
+			display: block;
+			position: relative;
+			height: 394px;
+			margin-block: calc(24px * -1);
+		}
+	}
+	a {
+		width: 100%;
+		color: var(--color-white);
+		background-color: var(--color-dark);
+		border-radius: var(--border-radius-md);
+		padding: 20px 35px;
+		text-align: center;
+		@media (--size-md) {
+			width: max-content;
+		}
+		&:hover {
+			color: var(--color-black);
+			background-color: var(--color-green);
+		}
+	}
+</style>
