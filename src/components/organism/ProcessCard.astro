@@ -35,11 +35,11 @@ const { index, title, text } = Astro.props;
 				text?.classList.remove('hidden');
 				card?.classList.remove('inactive');
 				card?.classList.add('active');
-				icon.src = '/public/assets/icon/minus.svg';
+				icon.src = '/assets/icon/minus.svg';
 			} else {
 				text?.classList.add('hidden');
 				card?.classList.add('inactive');
-				icon.src = '/public/assets/icon/plus.svg';
+				icon.src = '/assets/icon/plus.svg';
 			}
 		}),
 	);
