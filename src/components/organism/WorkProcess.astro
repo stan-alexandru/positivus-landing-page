@@ -1,0 +1,24 @@
+---
+import { PROCESS_STEPS } from '@/data';
+import ProcessCard from './ProcessCard.astro';
+---
+
+<div class='wrapper'>
+	{
+		PROCESS_STEPS.map((steps, index) => (
+			<ProcessCard index={index + 1} title={steps.title} text={steps.text} />
+		))
+	}
+</div>
+<style scoped>
+	.wrapper {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		gap: 20px;
+		@media (--size-md) {
+			gap: 30px;
+		}
+	}
+</style>

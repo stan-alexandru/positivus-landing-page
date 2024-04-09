@@ -1,0 +1,113 @@
+---
+interface Props {
+	index: number;
+	title: string;
+	text: string;
+}
+const { index, title, text } = Astro.props;
+---
+
+<article id='card' class='inactive'>
+	<div class='process-header-wrapper'>
+		<div class='process-header'>
+			<p class='process-index'>{index.toString().padStart(2, '0')}</p>
+			<h1 class='h3'>
+				{title}
+			</h1>
+		</div>
+		<button id='process-button' class='button'
+			><img id='icon' src='/assets/icon/plus.svg' /></button
+		>
+	</div>
+	<p id='process-text' class='hidden'>
+		{text}
+	</p>
+</article>
+
+<script>
+	const button = document.getElementById('process-button');
+	const text = document.getElementById('process-text');
+	const card = document.getElementById('card');
+	function toggleText() {
+		if (text?.classList.contains('hidden')) {
+			text?.classList.remove('hidden');
+			card?.classList.remove('inactive');
+			card?.classList.add('active');
+		} else {
+			text?.classList.add('hidden');
+			card?.classList.add('inactive');
+		}
+	}
+	button?.addEventListener('click', toggleText);
+</script>
+<style>
+	article {
+		border: 1px solid var(--color-black);
+		border-radius: var(--border-radius-lg);
+		padding: 30px;
+		@media (--size-md) {
+			font-size: 40px;
+			padding: 40px 60px;
+		}
+	}
+	.process-header-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.process-index {
+		font-size: 30px;
+		font-weight: 400;
+		@media (--size-md) {
+			font-size: 40px;
+		}
+	}
+	.process-header {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+		@media (--size-md) {
+			font-size: 60px;
+		}
+	}
+	.button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		background-color: var(--color-grey);
+		border-radius: 100%;
+		border: 1px solid var(--color-dark);
+		@media (--size-md) {
+			width: 58px;
+			height: 58px;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	img {
+		height: 12px;
+		width: 12px;
+		@media (--size-md) {
+			width: 25px;
+			height: 25px;
+		}
+	}
+	#process-text {
+		margin-top: 30px;
+		padding-top: 30px;
+		border-top: 1px solid var(--color-black);
+	}
+
+	.active {
+		background-color: var(--color-green);
+	}
+	.inactive {
+		background-color: var(--color-grey);
+	}
+	.hidden {
+		display: none;
+	}
+</style>

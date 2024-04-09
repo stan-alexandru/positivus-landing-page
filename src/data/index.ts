@@ -93,3 +93,30 @@ export const CASE_STUDIES = [
 		href: '#',
 	},
 ];
+
+export const PROCESS_STEPS = [
+	{
+		title: 'Consultation',
+		text: 'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
+	},
+	{
+		title: 'Research and Strategy Development',
+		text: '	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium augue augue, sed gravida nisi venenatis condimentum. ',
+	},
+	{
+		title: 'Implementation',
+		text: '	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium augue augue, sed gravida nisi venenatis condimentum. ',
+	},
+	{
+		title: 'Monitoring and Optimization',
+		text: '	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium augue augue, sed gravida nisi venenatis condimentum. ',
+	},
+	{
+		title: 'Reporting and Communication',
+		text: '	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium augue augue, sed gravida nisi venenatis condimentum. ',
+	},
+	{
+		title: 'Continual Improvement',
+		text: '	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium augue augue, sed gravida nisi venenatis condimentum. ',
+	},
+];
