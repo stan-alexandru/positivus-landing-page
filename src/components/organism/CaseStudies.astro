@@ -1,1 +1,55 @@
-<div>hello</div>
+---
+import { CASE_STUDIES } from '@/data';
+---
+
+<div class='case-wrapper'>
+	{
+		CASE_STUDIES.map((study) => (
+			<article class='case-card'>
+				<p class='case-card-text'>{study.text}</p>
+				<a href={study.href} class='case-card-link'>
+					Learn more{' '}
+					<img width='28' height='28' src='/assets/icon/arrow-green.svg' />
+				</a>
+			</article>
+		))
+	}
+</div>
+<style scoped>
+	.case-wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		@media (--size-lg) {
+			border-radius: var(--border-radius-lg);
+			background-color: var(--color-dark);
+			gap: unset;
+			overflow: hidden;
+			padding-block: 70px;
+		}
+	}
+	.case-card {
+		border-radius: var(--border-radius-lg);
+		padding: 42px 50px;
+		background-color: var(--color-dark);
+		color: var(--color-white);
+		display: inline flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+		gap: 20px;
+		scroll-snap-align: center;
+		@media (--size-lg) {
+			border-radius: unset;
+			border-left: 1px solid var(--color-grey);
+			padding: 0px 64px;
+		}
+	}
+	.case-card-link {
+		color: var(--color-green);
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+</style>
