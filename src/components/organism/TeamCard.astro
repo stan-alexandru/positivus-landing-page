@@ -1,0 +1,66 @@
+---
+interface Props {
+	name: string;
+	title: string;
+	desc: string;
+	portrait: string;
+	linkedin: string;
+}
+const { name, title, desc, portrait, linkedin } = Astro.props;
+---
+
+<article class='card'>
+	<div class='card-wrapper'>
+		<div class='card-info-wrapper'>
+			<img
+				class='card-portrait'
+				src={portrait}
+				alt={`${name} portrait`}
+				width='102'
+				height='102'
+			/>
+			<div class='card-title'><h1 class='h4'>{name}</h1><p>{title}</p></div>
+			<a class='linkedin' href={linkedin}>
+				<img src='/assets/icon/linkedin-dark.svg' width='34' height='34' /></a
+			>
+		</div>
+		<p class='card-desc'>{desc}</p>
+	</div>
+</article>
+
+<style scoped>
+	.card {
+		border: 1px solid var(--color-black);
+		display: flex;
+		flex-direction: column;
+		border-radius: var(--border-radius-lg);
+		border-width: 1px 1px 5px;
+	}
+	.card-wrapper {
+		padding: 40px 50px;
+		display: flex;
+		flex-direction: column;
+		@media (--size-md) {
+			padding: 40px 35px;
+		}
+		.linkedin {
+			place-self: start end;
+		}
+	}
+	.card-info-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	.card-title {
+		place-self: center start;
+		flex-grow: 1;
+	}
+	.card-desc {
+		border-top: 1px solid var(--color-black);
+		padding-top: 20px;
+		margin-top: 20px;
+	}
+</style>

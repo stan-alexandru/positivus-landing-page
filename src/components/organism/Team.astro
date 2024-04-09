@@ -1,0 +1,42 @@
+---
+import { TEAM } from '@/data';
+import TeamCard from './TeamCard.astro';
+---
+
+<div class='wrapper'>
+	{TEAM.map((colleague) => <TeamCard {...colleague} />)}
+	<a class='button' href='#' aria-label='See all team'>See all team</a>
+</div>
+<style scoped>
+	.wrapper {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		gap: 30px;
+		@media (--size-md) {
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(1, 1fr);
+		}
+		@media (--size-lg) {
+			gap: 30px;
+		}
+	}
+	.button {
+		width: 100%;
+		color: var(--color-white);
+		background-color: var(--color-dark);
+		border-radius: var(--border-radius-md);
+		padding: 20px 35px;
+		text-align: center;
+		@media (--size-md) {
+			width: 60%;
+			place-self: end;
+			grid-area: 3 / 3 / 4 / 4;
+		}
+		&:hover {
+			color: var(--color-black);
+			background-color: var(--color-green);
+		}
+	}
+</style>

@@ -120,3 +120,47 @@ export const PROCESS_STEPS = [
 		text: '	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium augue augue, sed gravida nisi venenatis condimentum. ',
 	},
 ];
+export const TEAM = [
+	{
+		name: 'John Smith',
+		title: 'CEO and Founder',
+		desc: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+		portrait: '/assets/portrait/man-1.png',
+		linkedin: '#',
+	},
+	{
+		name: 'Jane Doe',
+		title: 'Director of Operations',
+		desc: '7+ years of experience in project management and team leadership. Strong organizational and communication skills',
+		portrait: '/assets/portrait/woman-1.png',
+		linkedin: '#',
+	},
+	{
+		name: 'Michael Brown',
+		title: 'Senior SEO Specialist',
+		desc: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization',
+		portrait: '/assets/portrait/man-2.png',
+		linkedin: '#',
+	},
+	{
+		name: 'Emily Johnson',
+		title: 'PPC Manager',
+		desc: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis',
+		portrait: '/assets/portrait/woman-2.png',
+		linkedin: '#',
+	},
+	{
+		name: 'Brian Williams',
+		title: 'Social Media Specialist',
+		desc: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement',
+		portrait: '/assets/portrait/man-3.png',
+		linkedin: '#',
+	},
+	{
+		name: 'Sarah Kim',
+		title: 'Content Creator',
+		desc: '2+ years of experience in writing and editing.Skilled in creating compelling, SEO-optimized content for various industries',
+		portrait: '/assets/portrait/woman-3.png',
+		linkedin: '#',
+	},
+];
