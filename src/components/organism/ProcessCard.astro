@@ -7,7 +7,7 @@ interface Props {
 const { index, title, text } = Astro.props;
 ---
 
-<article id='card' class='inactive'>
+<article id='acordeon-card' class='inactive'>
 	<div class='process-header-wrapper'>
 		<div class='process-header'>
 			<p class='process-index'>{index.toString().padStart(2, '0')}</p>
@@ -25,26 +25,31 @@ const { index, title, text } = Astro.props;
 </article>
 
 <script>
-	const button = document.getElementById('process-button');
-	const text = document.getElementById('process-text');
-	const card = document.getElementById('card');
-	function toggleText() {
-		if (text?.classList.contains('hidden')) {
-			text?.classList.remove('hidden');
-			card?.classList.remove('inactive');
-			card?.classList.add('active');
-		} else {
-			text?.classList.add('hidden');
-			card?.classList.add('inactive');
-		}
-	}
-	button?.addEventListener('click', toggleText);
+	const card = document.querySelectorAll('#acordeon-card');
+	card.forEach((acordeon) =>
+		acordeon.querySelector('#process-button')?.addEventListener('click', () => {
+			const text = acordeon.querySelector('#process-text');
+			const card = acordeon;
+			const icon = acordeon.querySelector('#icon') as HTMLImageElement;
+			if (text?.classList.contains('hidden')) {
+				text?.classList.remove('hidden');
+				card?.classList.remove('inactive');
+				card?.classList.add('active');
+				icon.src = '/public/assets/icon/minus.svg';
+			} else {
+				text?.classList.add('hidden');
+				card?.classList.add('inactive');
+				icon.src = '/public/assets/icon/plus.svg';
+			}
+		}),
+	);
 </script>
 <style>
 	article {
 		border: 1px solid var(--color-black);
 		border-radius: var(--border-radius-lg);
 		padding: 30px;
+		border-width: 1px 1px 5px;
 		@media (--size-md) {
 			font-size: 40px;
 			padding: 40px 60px;
@@ -71,30 +76,22 @@ const { index, title, text } = Astro.props;
 		}
 	}
 	.button {
+		flex-shrink: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 30px;
-		height: 30px;
+		width: 58px;
+		height: 58px;
 		background-color: var(--color-grey);
 		border-radius: 100%;
 		border: 1px solid var(--color-dark);
 		@media (--size-md) {
-			width: 58px;
-			height: 58px;
 		}
 		&:hover {
 			cursor: pointer;
 		}
 	}
-	img {
-		height: 12px;
-		width: 12px;
-		@media (--size-md) {
-			width: 25px;
-			height: 25px;
-		}
-	}
+
 	#process-text {
 		margin-top: 30px;
 		padding-top: 30px;
