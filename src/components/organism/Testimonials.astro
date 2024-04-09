@@ -1,0 +1,87 @@
+---
+import { TESTIMONIALS } from '@/data';
+const test = TESTIMONIALS[0];
+---
+
+<div class='testimonial-wrapper'>
+	<div class='testimonial-card-wrapper'>
+		{
+			TESTIMONIALS.map((testimonial) => (
+				<div class='testimonial-card'>
+					<p class='testimonial-message'>{testimonial?.text}</p>
+					<div class='testimonial-title-wrapper'>
+						<>
+							<h1 class='h4'>{testimonial?.name}</h1>
+							<p>{testimonial?.title}</p>
+						</>
+					</div>
+				</div>
+			))
+		}
+	</div>
+
+	<div class='testimonial-control'>
+		<img src='/assets/icon/arrow-left.svg' width='24' height='24' />
+		<div>
+			{
+				TESTIMONIALS.map((_) => (
+					<img src='/assets/icon/star.svg' width='14' height='14' />
+				))
+			}
+		</div>
+		<img src='/assets/icon/arrow-right.svg' width='24' height='24' />
+	</div>
+</div>
+
+<style scoped>
+	.testimonial-wrapper {
+		width: 100%;
+		background-color: var(--color-dark);
+		border-radius: var(--border-radius-lg);
+		color: var(--color-white);
+		padding: 30px 30px 60px;
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+		overflow: scroll;
+		@media (--size-md) {
+			padding: 84px 68px;
+		}
+	}
+	.testimonial-card-wrapper {
+		width: max-content;
+		display: flex;
+		flex-direction: row;
+		gap: 50px;
+	}
+	.testimonial-message {
+		position: relative;
+		border-radius: var(--border-radius-lg);
+		border: 1px solid var(--color-green);
+		padding: 30px;
+	}
+	.testimonial-card {
+		scroll-snap-align: center;
+		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.testimonial-title-wrapper {
+		width: fit-content;
+		margin-left: 80px;
+		h1 {
+			color: var(--color-green);
+		}
+	}
+	.testimonial-control {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		div {
+			display: flex;
+			gap: 20px;
+		}
+	}
+</style>
