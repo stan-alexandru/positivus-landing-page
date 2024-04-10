@@ -20,12 +20,14 @@ const { title, id = title.toLocaleLowerCase(), text } = Astro.props;
 </section>
 <style scoped>
 	section {
+		margin-block: 60px;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 		gap: 40px;
 		@media (--size-lg) {
 			gap: 80px;
+			margin-block: 140px;
 		}
 	}
 	.section-title-wrapper {
