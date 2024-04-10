@@ -48,8 +48,10 @@
 		}
 	}
 	form {
-		max-width: 55%;
-		flex-grow: 1;
+		width: 100%;
+		@media (--size-md) {
+			max-width: 50%;
+		}
 	}
 	img {
 		display: none;

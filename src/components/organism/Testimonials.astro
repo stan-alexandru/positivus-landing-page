@@ -18,7 +18,6 @@ import { TESTIMONIALS } from '@/data';
 			))
 		}
 	</div>
-
 	<div class='testimonial-control'>
 		<img src='/assets/icon/arrow-left.svg' width='24' height='24' />
 		<div>
@@ -42,13 +41,13 @@ import { TESTIMONIALS } from '@/data';
 		display: flex;
 		flex-direction: column;
 		gap: 60px;
+		scroll-snap-type: x mandatory;
 		overflow: scroll;
 		@media (--size-md) {
 			padding: 84px 68px;
 		}
 	}
 	.testimonial-card-wrapper {
-		width: max-content;
 		display: flex;
 		flex-direction: row;
 		gap: 50px;
@@ -60,11 +59,14 @@ import { TESTIMONIALS } from '@/data';
 		padding: 30px;
 	}
 	.testimonial-card {
+		flex: 0 0 100%;
 		scroll-snap-align: center;
-		max-width: 600px;
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		@media (--size-md) {
+			flex: 0 0 60%;
+		}
 	}
 	.testimonial-title-wrapper {
 		width: fit-content;
@@ -74,6 +76,10 @@ import { TESTIMONIALS } from '@/data';
 		}
 	}
 	.testimonial-control {
+		position: sticky;
+		left: 0;
+		right: 0;
+		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
