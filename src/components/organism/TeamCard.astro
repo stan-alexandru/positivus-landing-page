@@ -37,7 +37,7 @@ const { name, title, desc, portrait, linkedin } = Astro.props;
 		border-width: 1px 1px 5px;
 	}
 	.card-wrapper {
-		padding: 40px 50px;
+		padding: 40px clamp(16px, 8%, 30px);
 		display: flex;
 		flex-direction: column;
 		@media (--size-md) {
@@ -54,9 +54,13 @@ const { name, title, desc, portrait, linkedin } = Astro.props;
 		justify-content: space-between;
 		gap: 20px;
 	}
-
+	.card-portrait {
+		width: clamp(40px, 100%, 102px);
+		aspect-ratio: 1 / 1;
+	}
 	.card-title {
-		place-self: center start;
+		place-self: bottom start;
+		text-align: center;
 		flex-grow: 1;
 	}
 	.card-desc {

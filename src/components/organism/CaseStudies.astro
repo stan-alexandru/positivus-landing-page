@@ -35,7 +35,7 @@ import { CASE_STUDIES } from '@/data';
 	.case-card {
 		flex: 0 0 85%;
 		border-radius: var(--border-radius-lg);
-		padding: 42px 50px;
+		padding: 42px clamp(16px, 8%, 50px);
 		background-color: var(--color-dark);
 		color: var(--color-white);
 		display: inline flex;
@@ -51,6 +51,9 @@ import { CASE_STUDIES } from '@/data';
 			border-left: 1px solid var(--color-grey);
 			padding: 0px 64px;
 		}
+	}
+	.case-card:first-child {
+		border-left: 0;
 	}
 	.case-card-link {
 		color: var(--color-green);

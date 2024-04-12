@@ -31,7 +31,8 @@
 	.cta-text-wrapper {
 		display: flex;
 		flex-direction: column;
-		padding: 50px;
+		padding: clamp(24px, 10%, 50px);
+
 		gap: 20px;
 		@media (--size-md) {
 			padding: 60px;
@@ -52,7 +53,7 @@
 		color: var(--color-white);
 		background-color: var(--color-dark);
 		border-radius: var(--border-radius-md);
-		padding: 20px 35px;
+		padding: 20px clamp(16px, 5%, 35px);
 		text-align: center;
 		@media (--size-md) {
 			width: max-content;

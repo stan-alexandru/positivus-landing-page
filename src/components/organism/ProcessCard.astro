@@ -46,13 +46,14 @@ const { index, title, text } = Astro.props;
 </script>
 <style>
 	article {
+		width: 100%;
 		border: 1px solid var(--color-black);
 		border-radius: var(--border-radius-lg);
-		padding: 30px;
+		padding: clamp(16px, 8%, 30px);
 		border-width: 1px 1px 5px;
 		@media (--size-md) {
 			font-size: 40px;
-			padding: 40px 60px;
+			padding: 40px clamp(16px, 8%, 60px);
 		}
 	}
 	.process-header-wrapper {
@@ -62,7 +63,7 @@ const { index, title, text } = Astro.props;
 	}
 	.process-index {
 		font-size: 30px;
-		font-weight: 400;
+		font-weight: 600;
 		@media (--size-md) {
 			font-size: 40px;
 		}
@@ -80,18 +81,26 @@ const { index, title, text } = Astro.props;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 58px;
-		height: 58px;
+		width: 30px;
+		height: 30px;
+
 		background-color: var(--color-grey);
 		border-radius: 100%;
 		border: 1px solid var(--color-dark);
 		@media (--size-md) {
+			width: 58px;
+			height: 58px;
 		}
 		&:hover {
 			cursor: pointer;
 		}
 	}
-
+	#icon {
+		width: 12px;
+		@media (--size-md) {
+			width: 25px;
+		}
+	}
 	#process-text {
 		margin-top: 30px;
 		padding-top: 30px;
