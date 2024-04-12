@@ -10,7 +10,7 @@ const { index, title, text } = Astro.props;
 <article id='acordeon-card' class='inactive'>
 	<div class='process-header-wrapper'>
 		<div class='process-header'>
-			<p class='process-index'>{index.toString().padStart(2, '0')}</p>
+			<p class='h2'>{index.toString().padStart(2, '0')}</p>
 			<h1 class='h3'>
 				{title}
 			</h1>
@@ -60,21 +60,14 @@ const { index, title, text } = Astro.props;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: min(13%, 33px);
 	}
-	.process-index {
-		font-size: 30px;
-		font-weight: 600;
-		@media (--size-md) {
-			font-size: 40px;
-		}
-	}
+
 	.process-header {
+		width: 100%;
 		display: flex;
 		align-items: center;
-		gap: 25px;
-		@media (--size-md) {
-			font-size: 60px;
-		}
+		gap: min(3%, 33px);
 	}
 	.button {
 		flex-shrink: 0;
