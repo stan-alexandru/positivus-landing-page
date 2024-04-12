@@ -15,7 +15,7 @@ const { theme = 'white', backdrop = 1 } = Astro.props;
 		display: flex;
 		flex-direction: column;
 		border-radius: var(--border-radius-lg);
-		padding: 50px;
+		padding: clamp(24px, 10%, 50px);
 	}
 	.backdrop {
 		border-width: 1px 1px 5px;

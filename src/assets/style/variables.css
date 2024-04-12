@@ -20,4 +20,10 @@ html[data-theme='light'] {
 	--border-radius-sm: 0.4375rem;
 	--border-radius-md: 0.875rem;
 	--border-radius-lg: 2.8125rem;
+
+	--font-p: clamp(1rem, 0.17vi + 0.97rem, 1.13rem);
+	--font-h4: clamp(1.25rem, 0.34vi + 1.19rem, 1.5rem);
+	--font-h3: clamp(1.56rem, 0.6vi + 1.46rem, 2rem);
+	--font-h2: clamp(1.95rem, 0.98vi + 1.78rem, 2.66rem);
+	--font-h1: clamp(2.44rem, 1.53vi + 2.17rem, 3.55rem);
 }

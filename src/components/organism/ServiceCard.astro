@@ -26,16 +26,17 @@ const linkTheme = (theme: string): any => {
 </Card>
 <style scoped>
 	div {
+		width: 100%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		gap: 20px;
 	}
 	img {
-		align-self: auto;
-		height: 129px;
+		align-self: center;
 		width: 165px;
 		@media (--size-md) {
-			height: 149px;
 			width: 210px;
 			align-self: flex-end;
 		}

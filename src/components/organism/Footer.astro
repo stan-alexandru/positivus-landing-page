@@ -37,9 +37,9 @@ import { HEADER, SOCIAL } from '@/data/index';
 				<p>Address: 1234 Main St</p>
 				<p>Moonstone City, Stardust State 12345</p>
 			</address>
-			<form class='footer-form'>
+			<form class='footer-form' onsubmit='event.preventDefault()'>
 				<input placeholder='Email' type='email' />
-				<button>Subscribe to news</button>
+				<button disabled>Subscribe to news</button>
 			</form>
 		</div>
 	</div>
@@ -61,6 +61,7 @@ import { HEADER, SOCIAL } from '@/data/index';
 
 <style scoped>
 	footer {
+		margin-block-start: auto;
 		width: 100%;
 		padding-block: 50px 30px;
 		padding-inline: 20px;
@@ -138,9 +139,9 @@ import { HEADER, SOCIAL } from '@/data/index';
 			color: var(--color-black);
 			width: fit-content;
 			padding-inline: 7px;
-			margin: 37px 90px;
+			margin: 37px auto;
 			@media (--size-md) {
-				margin: 37px 0;
+				margin: 37px auto;
 			}
 		}
 		#phone {
@@ -176,6 +177,10 @@ import { HEADER, SOCIAL } from '@/data/index';
 			background-color: var(--color-green);
 			color: var(--color-black);
 			padding-block: 21px;
+			border: 0;
+			&:hover {
+				cursor: pointer;
+			}
 		}
 		@media (--size-md) {
 			flex-direction: row;
@@ -204,11 +209,12 @@ import { HEADER, SOCIAL } from '@/data/index';
 	}
 	.footer-policy-wrapper {
 		border-top: 1px solid var(--color-grey);
-		padding-block: 37px;
+		padding-block: 37px 0px;
 		display: flex;
 		flex-direction: column;
 		place-items: center;
 		gap: 15px;
+
 		@media (--size-md) {
 			flex-direction: row;
 			gap: 40px;

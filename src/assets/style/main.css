@@ -16,10 +16,15 @@ body {
 	background-color: var(--color-white);
 	color: var(--color-black);
 }
-main {
-	flex-grow: 1;
-}
 
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 /* Theme */
 
 .container {
@@ -31,53 +36,35 @@ main {
 		padding-inline: unset;
 	}
 }
+
 h1,
 .h1 {
-	font-size: 43px;
+	font-size: var(--font-h1);
 	font-weight: 500;
 	line-height: normal;
-	@media (--size-md) {
-		font-size: 60px;
-	}
 }
 h2,
 .h2 {
-	font-size: 36px;
+	font-size: var(--font-h2);
 	font-weight: 500;
 	line-height: normal;
-
-	@media (--size-md) {
-		font-size: 40px;
-	}
 }
 h3,
 .h3 {
-	font-size: 26px;
+	font-size: var(--font-h3);
 	font-weight: 500;
 	line-height: normal;
-
-	@media (--size-md) {
-		font-size: 30px;
-	}
 }
 h4,
 .h4 {
-	font-size: 18px;
+	font-size: var(--font-h4);
 	line-height: normal;
-
-	@media (--size-md) {
-		font-size: 20px;
-	}
 }
 
 p,
 body,
 .p {
-	font-size: 16px;
+	font-size: var(--font-p);
 	line-height: 24px;
 	font-weight: 400;
-
-	@media (--size-md) {
-		font-size: 18px;
-	}
 }
