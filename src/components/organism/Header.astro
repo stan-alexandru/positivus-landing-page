@@ -40,13 +40,15 @@ import { HEADER } from '@/data';
 			padding: 20px 35px;
 		}
 	}
+
 	ul {
 		display: none;
 		@media (--size-md) {
 			display: flex;
 			flex-direction: row;
 			place-items: center;
-			gap: 15px;
+			justify-content: space-around;
+			gap: 7px;
 		}
 		@media (--size-lg) {
 			gap: 40px;
@@ -69,7 +71,6 @@ import { HEADER } from '@/data';
 		flex-direction: row;
 		justify-content: space-between;
 		@media (--size-md) {
-			padding-inline: unset;
 			margin-block: 3.125rem 4.375rem;
 		}
 	}

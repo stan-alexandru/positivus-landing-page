@@ -4,6 +4,7 @@
 @custom-media --device-desktop (1200px <= width <= 1920px);
 @custom-media --device-tv (width >= 1920px);
 
+@custom-media --size-xs (356px <= width);
 @custom-media --size-sm (576px <= width);
 @custom-media --size-md (768px <= width);
 @custom-media --size-lg (1200px <= width);
@@ -21,9 +22,9 @@ html[data-theme='light'] {
 	--border-radius-md: 0.875rem;
 	--border-radius-lg: 2.8125rem;
 
-	--font-p: clamp(1rem, 0.17vi + 0.97rem, 1.13rem);
-	--font-h4: clamp(1.25rem, 0.34vi + 1.19rem, 1.5rem);
-	--font-h3: clamp(1.56rem, 0.6vi + 1.46rem, 2rem);
-	--font-h2: clamp(1.95rem, 0.98vi + 1.78rem, 2.66rem);
-	--font-h1: clamp(2.44rem, 1.53vi + 2.17rem, 3.55rem);
+	--font-p: clamp(1rem, 0.38vi + 0.9rem, 1.25rem);
+	--font-h4: clamp(1.2rem, 0.71vi + 1.02rem, 1.66rem);
+	--font-h3: clamp(1.44rem, 1.19vi + 1.14rem, 2.21rem);
+	--font-h2: clamp(1.73rem, 1.87vi + 1.26rem, 2.94rem);
+	--font-h1: clamp(2.07rem, 2.83vi + 1.37rem, 3.91rem);
 }

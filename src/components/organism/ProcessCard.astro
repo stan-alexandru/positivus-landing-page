@@ -10,10 +10,10 @@ const { index, title, text } = Astro.props;
 <article id='acordeon-card' class='inactive'>
 	<div class='process-header-wrapper'>
 		<div class='process-header'>
-			<p class='h2'>{index.toString().padStart(2, '0')}</p>
-			<h1 class='h3'>
+			<h2 class='index'>{index.toString().padStart(2, '0')}</h2>
+			<h3 class=''>
 				{title}
-			</h1>
+			</h3>
 		</div>
 		<button id='process-button' class='button'
 			><img id='icon' src='/assets/icon/plus.svg' /></button
@@ -51,6 +51,7 @@ const { index, title, text } = Astro.props;
 		border-radius: var(--border-radius-lg);
 		padding: clamp(16px, 8%, 30px);
 		border-width: 1px 1px 5px;
+		word-break: break-word;
 		@media (--size-md) {
 			font-size: 40px;
 			padding: 40px clamp(16px, 8%, 60px);
@@ -67,7 +68,17 @@ const { index, title, text } = Astro.props;
 		width: 100%;
 		display: flex;
 		align-items: center;
-		gap: min(3%, 33px);
+		gap: min(13%, 33px);
+		h2,
+		h3 {
+			font-size: 16px;
+			@media (--size-md) {
+				font-size: unset;
+			}
+		}
+	}
+	.index {
+		flex-shrink: 0;
 	}
 	.button {
 		flex-shrink: 0;

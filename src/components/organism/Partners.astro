@@ -5,7 +5,9 @@ import { PARTNERS } from '@/data/index';
 <section>
 	{
 		PARTNERS.map((partner) => (
-			<img src={partner.path} height='48px' alt={`${partner.title} logo`} />
+			<div>
+				<img src={partner.path} height='48px' alt={`${partner.title} logo`} />
+			</div>
 		))
 	}
 </section>
@@ -13,18 +15,23 @@ import { PARTNERS } from '@/data/index';
 	section {
 		margin-block: 60px;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		place-content: center;
 		row-gap: 20px;
 		column-gap: 37px;
 		@media (--size-md) {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			flex-wrap: wrap;
 			gap: 37px;
 		}
 	}
 	img {
+		width: 125px;
 		filter: grayscale(100%);
+	}
+	div {
+		display: flex;
+		place-content: center;
 	}
 </style>

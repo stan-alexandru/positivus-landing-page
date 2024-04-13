@@ -29,9 +29,6 @@
 		gap: 35px;
 	}
 	.hero-text-img {
-		object-fit: contain;
-		width: 100%;
-		height: 100%;
 		@media (--size-md) {
 			display: none;
 		}
@@ -39,7 +36,7 @@
 	.hero-article-img {
 		display: none;
 		@media (--size-md) {
-			display: unset;
+			display: revert;
 			object-fit: contain;
 			width: 100%;
 			height: 100%;

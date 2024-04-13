@@ -29,11 +29,12 @@ img {
 
 .container {
 	max-width: 1440px;
+	width: 100%;
 	margin-inline: auto;
 	padding-inline: 1.5rem;
-	@media (--size-sm) {
-		width: 90%;
-		padding-inline: unset;
+	@media (--size-md) {
+		max-width: 90%;
+		padding-inline: revert;
 	}
 }
 

@@ -173,16 +173,16 @@ export const TESTIMONIALS = [
 	{
 		name: 'John Smith ',
 		title: 'Marketing Director at XYZ Corp ',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet justo donec enim. Id leo in vitae turpis massa sed elementum tempus. Tristique senectus et netus et malesuada fames ac turpis egestas. Adipiscing vitae proin sagittis nisl rhoncus. Ut placerat orci nulla pellentesque dignissim enim sit amet. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. ',
+		text: 'We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.',
 	},
 	{
 		name: 'John Smith ',
 		title: 'Marketing Director at XYZ Corp ',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet justo donec enim. Id leo in vitae turpis massa sed elementum tempus. Tristique senectus et netus et malesuada fames ac turpis egestas. Adipiscing vitae proin sagittis nisl rhoncus. Ut placerat orci nulla pellentesque dignissim enim sit amet. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. ',
+		text: 'We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.',
 	},
 	{
 		name: 'John Smith ',
 		title: 'Marketing Director at XYZ Corp ',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet justo donec enim. Id leo in vitae turpis massa sed elementum tempus. Tristique senectus et netus et malesuada fames ac turpis egestas. Adipiscing vitae proin sagittis nisl rhoncus. Ut placerat orci nulla pellentesque dignissim enim sit amet. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. ',
+		text: 'We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.',
 	},
 ];

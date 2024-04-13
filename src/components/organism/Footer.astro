@@ -93,14 +93,17 @@ import { HEADER, SOCIAL } from '@/data/index';
 		align-items: center;
 		justify-content: center;
 		gap: 15px;
+		flex-wrap: wrap;
 
 		@media (--size-md) {
 			flex-direction: row;
-			gap: 40px;
 
 			a {
 				text-decoration: underline;
 			}
+		}
+		@media (--size-lg) {
+			gap: 40px;
 		}
 	}
 	.header-social-wrapper {
@@ -140,7 +143,7 @@ import { HEADER, SOCIAL } from '@/data/index';
 			padding-inline: 7px;
 			margin: 37px auto;
 			@media (--size-md) {
-				margin: 37px auto;
+				margin: 37px 0px;
 			}
 		}
 		#phone {

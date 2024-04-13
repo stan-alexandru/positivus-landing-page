@@ -51,17 +51,26 @@ const { name, title, desc, portrait, linkedin } = Astro.props;
 	.card-info-wrapper {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		gap: 20px;
+		justify-content: center;
+		gap: 7px;
+		justify-content: center;
+
+		@media (--size-md) {
+			justify-content: start;
+		}
 	}
 	.card-portrait {
 		width: clamp(40px, 100%, 102px);
 		aspect-ratio: 1 / 1;
 	}
 	.card-title {
-		place-self: bottom start;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		align-items: center;
 		text-align: center;
 		flex-grow: 1;
+		justify-content: end;
 	}
 	.card-desc {
 		border-top: 1px solid var(--color-black);
